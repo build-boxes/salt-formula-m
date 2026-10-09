@@ -88,7 +88,7 @@ After testing is complete, bring down the containers with the following command.
 ```
 podman compose down
 OR
-dockercompose down
+docker compose down
 ```
 
 ## How To Run Serverspec Tests Manually
