@@ -1,5 +1,5 @@
 # ------ COMPILER - STAGE ------------
-FROM quay.io/almalinuxorg/8-minimal AS compiler
+FROM quay.io/almalinuxorg/10-minimal AS compiler
 
 # Install core tools and SaltStack
 RUN echo " Update OS repos"  && \
@@ -25,7 +25,7 @@ RUN curl -O https://pyyaml.org/download/libyaml/yaml-0.2.5.tar.gz \
     && cd .. && rm -rf yaml-0.2.5*
 
 # ------ Runtime - Stage ----
-FROM quay.io/almalinuxorg/8-minimal
+FROM quay.io/almalinuxorg/10-minimal
 
 LABEL maintainer="rauf.hammad@gmail.com"
 LABEL description="Reusable Salt Minion base image"

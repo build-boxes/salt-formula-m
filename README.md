@@ -1,5 +1,5 @@
 # Salt-Formula-M
-An inependent salt minion container image for use with [salt-formula-x (Salt-Master)](https://github.com/build-boxes/salt-formula-x) and the Compose file [Docker/Podman Compose file for Salt](https://github.com/build-boxes/salt-compose.git)
+An independent salt minion container image for use with [salt-formula-x (Salt-Master)](https://github.com/build-boxes/salt-formula-x) and the Compose file [Docker/Podman Compose file for Salt](https://github.com/build-boxes/salt-compose.git)
 
 ## Build Podman Image
 ```
