@@ -42,6 +42,7 @@ RUN echo " Update OS repos"  && \
 
 # Install core tools and SaltStack (runtime packages only, no build toolchain)
 RUN microdnf -y install procps net-tools curl nano httpd openssh-server \
+      dnf \
     && curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.repo \
       | tee /etc/yum.repos.d/salt.repo \
     && microdnf update -y \
